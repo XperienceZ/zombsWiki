@@ -4,6 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "zombs.io Wiki",
   description: "Wiki for everything zombs.io",
+  base: "/zombsWiki/",
   srcDir: "src",
   head: [
     ["link", { rel: "icon", href: "/logo.svg" }],
