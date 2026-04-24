@@ -56,12 +56,35 @@ export default defineConfig({
               { text: "metrics", link: "/engine/utilities/metrics" },
               { text: "platform", link: "/engine/utilities/platform" },
             ],
-          }
+          },
         ],
       },
-      { text: "Miscellaneous", items: [
-        { text: "Records", link: "/misc/records" },
-      ]},
+      {
+        text: "Miscellaneous",
+        items: [{ text: "Records", link: "/misc/records" }],
+      },
+      {
+        text: "Base game",
+        items: [
+          {
+            text: "Buildings",
+            items: [
+              { text: "Buildings overview", link: "/game/buildings/buildings.md" },
+              { text: "Wall", link: "/game/buildings/wall.md" },
+              { text: "Door", link: "/game/buildings/door.md" },
+              { text: "Trap", link: "/game/buildings/slow_trap.md" },
+              { text: "Arrow", link: "/game/buildings/arrow_tower.md" },
+              { text: "Cannon", link: "/game/buildings/cannon_tower.md" },
+              { text: "Melee", link: "/game/buildings/melee_tower.md" },
+              { text: "Bomb", link: "/game/buildings/bomb_tower.md" },
+              { text: "Mage", link: "/game/buildings/mage_tower.md" },
+              { text: "Gold Mine", link: "/game/buildings/gold_mine.md" },
+              { text: "Harvester", link: "/game/buildings/harvester.md" },
+              { text: "Gold Stash", link: "/game/buildings/gold_stash.md" },
+            ],
+          },
+        ],
+      },
     ],
 
     logo: "/logo.svg",
@@ -70,6 +93,5 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/AyuBloom/zombsWiki" },
       { icon: "discord", link: "https://discord.gg/Wm7khMgzUe" },
     ],
-
   },
 });
