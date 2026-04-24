@@ -9,7 +9,7 @@ This project is a documentation website built for a 2D multiplayer survival game
 
 ## Project Structure
 ```
-zombs.io docs/
+zombsWiki/
 ├── .vitepress/           # VitePress configuration
 │   ├── theme/                # VitePress themes
 │   │   ├── custom.css            # Custom CSS styles for VitePress

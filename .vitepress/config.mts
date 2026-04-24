@@ -52,7 +52,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: "github", link: "https://github.com/AyuBloom/zombsWiki" },
-      { icon: "discord", link: "https://discord.gg/GMG5BHfkBJ" },
+      { icon: "discord", link: "https://discord.gg/Wm7khMgzUe" },
     ],
 
   },
