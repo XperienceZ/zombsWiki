@@ -1,2 +1,5 @@
 User-Agent: *
-Disallow:
+Crawl-delay: 10
+Allow: /
+
+Sitemap: https://ayubloom.github.io/zombsWiki/
