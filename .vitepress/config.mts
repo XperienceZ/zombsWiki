@@ -50,6 +50,9 @@ export default defineConfig({
 
     logo: "/logo.svg",
 
-    socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/AyuBloom/zombsWiki" },
+      { icon: "discord", link: "https://discord.gg/GMG5BHfkBJ" },
+    ],
   },
 });
