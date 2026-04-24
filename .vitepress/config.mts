@@ -4,6 +4,9 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "zombs.io Wiki",
   description: "Wiki for everything zombs.io",
+  sitemap: {
+    hostname: 'https://ayubloom.github.io/zombsWiki/'
+  },
   base: "/zombsWiki/",
   srcDir: "src",
   head: [

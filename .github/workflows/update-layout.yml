@@ -2,8 +2,7 @@ name: Update Project Layout
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   manipulate-file:
@@ -24,11 +23,11 @@ jobs:
           node-version: 24
           cache: pnpm
 
-      - name: Run your script
+      - name: Run generate-structure script
         run: |
           node ./scripts/generate-structure.mjs
 
-      - name: Commit and Push changes
+      - name: Commit and Push layout to README.md
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update README.md [skip CI]"
