@@ -7,11 +7,14 @@ The `network` module handles all communication between the client and the server
 ### Methods
 
 #### `constructor()`
+```ts
+function constructor(): void
+```
 Initializes a new `EventEmitter` as `this.emitter` and sets up a default handler for `PACKET_BLEND`.
 
 #### `sendEnterWorld()`
 ```ts
-function sendEnterWorld(data: Object): void
+function sendEnterWorld(data: object): void
 ```
 Sends a `PACKET_ENTER_WORLD` packet.
 
@@ -23,19 +26,19 @@ Sends a `PACKET_ENTER_WORLD2` packet. This packet is part of the anti-bot mechan
 
 #### `sendInput()`
 ```ts
-function sendInput(data: Object): void
+function sendInput(data: object): void
 ```
 Sends a `PACKET_INPUT` packet containing player input.
 
 #### `sendPing()`
 ```ts
-function sendPing(data: Object): void
+function sendPing(data: object): void
 ```
 Sends a `PACKET_PING` packet.
 
 #### `sendRpc()`
 ```ts
-function sendRpc(data: Object): void
+function sendRpc(data: object): void
 ```
 Sends a `PACKET_RPC` packet.
 
@@ -65,7 +68,7 @@ Registers a handler for `PACKET_PING` packets.
 
 #### `addRpcHandler()`
 ```ts
-function addRpcHandler(name: String, callback: Function): void
+function addRpcHandler(name: string, callback: Function): void
 ```
 Registers a handler for a specific RPC response by name.
 
@@ -89,32 +92,32 @@ Registers a handler for the `error` WebSocket event.
 
 #### `addPacketHandler()`
 ```ts
-function addPacketHandler(event: Number, callback: Function): void
+function addPacketHandler(event: number, callback: Function): void
 ```
 Registers a raw packet handler using the `PacketId`.
 
 ## BinNetworkAdapter
 
-Bounded to `game` as `game.network`. Extends `NetworkAdapter`.
+Bounded to `game` as `game.network`. Extends `NetworkAdapter`, alias: `NetworkType`
 
-### Variables
+### Properties
 
-| Variable | Type | Description |
+| Properties | Type | Description |
 | :--- | :--- | :--- |
 | `pingStart` | `Date \| null` | The timestamp when the last ping was sent. |
 | `pingCompletion` | `Date \| null` | The timestamp when the last ping response was received. |
-| `ping` | `Number` | The current round-trip time divided by 2 (latency). |
-| `connected` | `Boolean` | Whether the socket is currently connected. |
-| `connecting` | `Boolean` | Whether the socket is currently in the process of connecting. |
+| `ping` | `number` | The current round-trip time divided by 2 (latency). |
+| `connected` | `boolean` | Whether the socket is currently connected. |
+| `connecting` | `boolean` | Whether the socket is currently in the process of connecting. |
 | `codec` | `BinCodec` | The codec used for encoding and decoding binary packets. |
 | `socket` | `WebSocket` | The underlying WebSocket instance. |
-| `connectionOptions` | `Object` | The options used for the current connection (hostname, port, etc.). |
+| `connectionOptions` | `object` | The options used for the current connection (hostname, port, etc.). |
 
 ### Methods
 
 #### `connect()`
 ```ts
-function connect(options: Object): void
+function connect(options: object): void
 ```
 Initiates a WebSocket connection to `wss://{options.hostname}:{options.port}`.
 
@@ -138,13 +141,13 @@ Attempts to reconnect using the last used `connectionOptions`.
 
 #### `getPing()`
 ```ts
-function getPing(): Number
+function getPing(): number
 ```
 Returns the current `ping` value.
 
 #### `sendPacket()`
 ```ts
-function sendPacket(event: Number, data: Object): void
+function sendPacket(event: number, data: object): void
 ```
 Encodes the data using the `codec` and sends it over the WebSocket.
 
@@ -166,7 +169,7 @@ function onPing(): void
 ```
 Calculates the latency when a ping response is received.
 
-## BinCodec
+## `BinCodec`
 
 The `BinCodec` class handles the serialization and deserialization of game data into a compact binary format using `ByteBuffer`.
 
@@ -174,79 +177,79 @@ The `BinCodec` class handles the serialization and deserialization of game data 
 
 #### `encode()`
 ```ts
-function encode(name: Number, item: Object): ArrayBuffer
+function encode(name: number, item: object): ArrayBuffer
 ```
 Encodes a packet into an `ArrayBuffer`.
 
 #### `decode()`
 ```ts
-function decode(data: ArrayBuffer): Object
+function decode(data: ArrayBuffer): object
 ```
 Decodes a packet from an `ArrayBuffer`.
 
 #### `safeReadVString()`
 ```ts
-function safeReadVString(buffer: ByteBuffer): String
+function safeReadVString(buffer: ByteBuffer): string
 ```
 Safely reads a variable-length string from the buffer.
 
 #### `decodePreEnterWorldResponse()`
 ```ts
-function decodePreEnterWorldResponse(buffer: ByteBuffer): Object
+function decodePreEnterWorldResponse(buffer: ByteBuffer): object
 ```
 Decodes the pre-entry packet, which calls `decodeBlendInternal` internally.
 
 #### `decodeEnterWorldResponse()`
 ```ts
-function decodeEnterWorldResponse(buffer: ByteBuffer): Object
+function decodeEnterWorldResponse(buffer: ByteBuffer): object
 ```
 Decodes the world entry response, including world dimensions, tick rates, and the full attribute/RPC maps.
 
 #### `decodeEntityUpdate()`
 ```ts
-function decodeEntityUpdate(buffer: ByteBuffer): Object
+function decodeEntityUpdate(buffer: ByteBuffer): object
 ```
 Decodes an entity update packet. This handles removed entities, newly created entities, and updated attributes for existing entities.
 
 #### `decodePing()`
 ```ts
-function decodePing(buffer: ByteBuffer): Object
+function decodePing(buffer: ByteBuffer): object
 ```
 Decodes a ping packet (returns empty object).
 
 #### `encodeRpc()`
 ```ts
-function encodeRpc(buffer: ByteBuffer, item: Object): void
+function encodeRpc(buffer: ByteBuffer, item: object): void
 ```
 Encodes an RPC call based on its registered parameter types.
 
 #### `decodeBlend()`
 ```ts
-function decodeBlend(buffer: ByteBuffer): Object
+function decodeBlend(buffer: ByteBuffer): object
 ```
 Decodes the occasional blend packet, which calls `decodeBlendInternal` internally.
 
 #### `decodeBlendInternal()`
 ```ts
-function decodeBlendInternal(buffer: ByteBuffer): Object
+function decodeBlendInternal(buffer: ByteBuffer): object
 ```
 Solves the PoW challenge that is part of the anti-bot mechanism of the game. The output of this function contains a PoW answer that is 64-byte long.
 
 #### `decodeRpcObject()`
 ```ts
-function decodeRpcObject(buffer: ByteBuffer, parameters: Array): Object
+function decodeRpcObject(buffer: ByteBuffer, parameters: Array): object
 ```
 Decodes a single RPC response object based on its parameter definitions.
 
 #### `decodeRpc()`
 ```ts
-function decodeRpc(buffer: ByteBuffer): Object
+function decodeRpc(buffer: ByteBuffer): object
 ```
 Decodes an RPC response, handling both single objects and arrays of objects.
 
 #### `encodeBlend()`
 ```ts
-function encodeBlend(buffer: ByteBuffer, item: Object): void
+function encodeBlend(buffer: ByteBuffer, item: object): void
 ```
 Encodes a blend packet.
 
@@ -258,19 +261,19 @@ Encodes the secondary world entry packet.
 
 #### `encodeEnterWorld()`
 ```ts
-function encodeEnterWorld(buffer: ByteBuffer, item: Object): void
+function encodeEnterWorld(buffer: ByteBuffer, item: object): void
 ```
 Encodes the primary world entry packet with display name and extra data.
 
 #### `encodeInput()`
 ```ts
-function encodeInput(buffer: ByteBuffer, item: Object): void
+function encodeInput(buffer: ByteBuffer, item: object): void
 ```
 Encodes player input as a JSON string.
 
 #### `encodePing()`
 ```ts
-function encodePing(buffer: ByteBuffer, item: Object): void
+function encodePing(buffer: ByteBuffer, item: object): void
 ```
 Encodes a ping packet.
 

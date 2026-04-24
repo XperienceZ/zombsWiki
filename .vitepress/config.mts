@@ -24,6 +24,10 @@ export default defineConfig({
       provider: "local",
     },
 
+    editLink: {
+      pattern: 'https://github.com/AyuBloom/zombsWiki/edit/main/src/:path'
+    },
+
     sidebar: [
       {
         text: "Introduction",
@@ -47,44 +51,49 @@ export default defineConfig({
               { text: "inputPacketCreator", link: "/engine/main/inputPacketCreator" },
               { text: "inputPacketScheduler", link: "/engine/main/inputPacketScheduler" },
             ],
+            collapsed: true,
           },
           {
             text: "Utility Components",
             items: [
-              { text: "assetManager", link: "/engine/utilities/assetManager" },
-              { text: "debug", link: "/engine/utilities/debug" },
-              { text: "metrics", link: "/engine/utilities/metrics" },
-              { text: "platform", link: "/engine/utilities/platform" },
+              { text: "assetManager", link: "/engine/utils/assetManager" },
+              { text: "debug", link: "/engine/utils/debug" },
+              { text: "metrics", link: "/engine/utils/metrics" },
+              { text: "platform", link: "/engine/utils/platform" },
             ],
+            collapsed: true,
           },
         ],
       },
       {
-        text: "Miscellaneous",
-        items: [{ text: "Records", link: "/misc/records" }],
-      },
-      {
-        text: "Base game",
+        text: "Game",
         items: [
           {
             text: "Buildings",
             items: [
-              { text: "Buildings overview", link: "/game/buildings/buildings.md" },
+              { text: "Overview", link: "/game/buildings/buildings.md" },
               { text: "Wall", link: "/game/buildings/wall.md" },
               { text: "Door", link: "/game/buildings/door.md" },
               { text: "Trap", link: "/game/buildings/slow_trap.md" },
-              { text: "Arrow", link: "/game/buildings/arrow_tower.md" },
-              { text: "Cannon", link: "/game/buildings/cannon_tower.md" },
-              { text: "Melee", link: "/game/buildings/melee_tower.md" },
-              { text: "Bomb", link: "/game/buildings/bomb_tower.md" },
-              { text: "Mage", link: "/game/buildings/mage_tower.md" },
+              { text: "Arrow Tower", link: "/game/buildings/arrow_tower.md" },
+              { text: "Cannon Tower", link: "/game/buildings/cannon_tower.md" },
+              { text: "Melee Tower", link: "/game/buildings/melee_tower.md" },
+              { text: "Bomb Tower", link: "/game/buildings/bomb_tower.md" },
+              { text: "Mage Tower", link: "/game/buildings/mage_tower.md" },
               { text: "Gold Mine", link: "/game/buildings/gold_mine.md" },
               { text: "Harvester", link: "/game/buildings/harvester.md" },
               { text: "Gold Stash", link: "/game/buildings/gold_stash.md" },
             ],
+            collapsed: true,
           },
         ],
       },
+      { text: "MakeBlendField", items: [
+        { text: "Overview", link: "/mbf/overview" },
+      ]},
+      { text: "Miscellaneous", items: [
+        { text: "World Records", link: "/misc/records" },
+      ]},
     ],
 
     logo: "/logo.svg",
@@ -93,5 +102,7 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/AyuBloom/zombsWiki" },
       { icon: "discord", link: "https://discord.gg/Wm7khMgzUe" },
     ],
+
+    lastUpdated: { formatOptions: { dateStyle: "long", timeStyle: "short" } }
   },
 });

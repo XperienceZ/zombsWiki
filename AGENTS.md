@@ -27,13 +27,50 @@ zombsWiki/
 - `pnpm run docs:dev`: Starts the development server.
 - `pnpm run docs:build`: Builds the production application.
 
-## Format when writing documentation for methods
+## Documentation Format
+
+- All TypeScript types should be written in lowercase (except `Function`, `Array`)
+
+### When writing methods
 
 ````md
 
 #### `methodName()`
 ```ts
-function methodName(parameter: Type): returnValue
+function methodName(parameter: type): returnValue
 ```
 
 ````
+
+### When writing tables
+
+```md
+| Head1 | Head2 | ... |
+| :--- | :--- | :--- |
+| data1 | data2 | ... |
+| ... | ... | ... |
+```
+
+## Custom Containers
+
+```md
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+```
