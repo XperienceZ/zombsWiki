@@ -7,7 +7,7 @@ export default defineConfig({
   base: "/zombsWiki/",
   srcDir: "src",
   head: [
-    ["link", { rel: "icon", href: "/logo.svg" }],
+    ["link", { rel: "icon", href: "/zombsWiki/logo.svg" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }],
     [
@@ -43,10 +43,25 @@ export default defineConfig({
               { text: "world", link: "/engine/main/world" },
               { text: "network", link: "/engine/main/network" },
               { text: "renderer", link: "/engine/main/renderer" },
+              { text: "inputManager", link: "/engine/main/inputManager" },
+              { text: "inputPacketCreator", link: "/engine/main/inputPacketCreator" },
+              { text: "inputPacketScheduler", link: "/engine/main/inputPacketScheduler" },
             ],
           },
+          {
+            text: "Utility Components",
+            items: [
+              { text: "assetManager", link: "/engine/utilities/assetManager" },
+              { text: "debug", link: "/engine/utilities/debug" },
+              { text: "metrics", link: "/engine/utilities/metrics" },
+              { text: "platform", link: "/engine/utilities/platform" },
+            ],
+          }
         ],
       },
+      { text: "Miscellaneous", items: [
+        { text: "Records", link: "/misc/records" },
+      ]},
     ],
 
     logo: "/logo.svg",

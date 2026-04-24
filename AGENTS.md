@@ -26,3 +26,14 @@ zombsWiki/
 
 - `pnpm run docs:dev`: Starts the development server.
 - `pnpm run docs:build`: Builds the production application.
+
+## Format when writing documentation for methods
+
+````md
+
+#### `methodName()`
+```ts
+function methodName(parameter: Type): returnValue
+```
+
+````
