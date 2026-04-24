@@ -2,4 +2,4 @@ User-Agent: *
 Crawl-delay: 10
 Allow: /
 
-Sitemap: https://ayubloom.github.io/zombsWiki/
+Sitemap: https://ayubloom.github.io/zombsWiki/sitemap.xml
