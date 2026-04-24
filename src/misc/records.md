@@ -1,5 +1,7 @@
 # World Records
 
+## Wave Records
+
 Below is a comprehensive table containing all of the World Records for the Wave category above 15000 Waves.
 
 | Waves | Date | Players | Notes |

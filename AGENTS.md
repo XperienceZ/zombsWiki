@@ -27,7 +27,9 @@ zombsWiki/
 - `pnpm run docs:dev`: Starts the development server.
 - `pnpm run docs:build`: Builds the production application.
 
-## Format when writing documentation for methods
+## Documentation Format
+
+### When writing methods
 
 ````md
 
@@ -37,3 +39,36 @@ function methodName(parameter: Type): returnValue
 ```
 
 ````
+
+### When writing tables
+
+```md
+| Head1 | Head2 | ... |
+| :--- | :--- | :--- |
+| data1 | data2 | ... |
+| ... | ... | ... |
+```
+
+## Custom Containers
+
+```md
+::: info
+This is an info box.
+:::
+
+::: tip
+This is a tip.
+:::
+
+::: warning
+This is a warning.
+:::
+
+::: danger
+This is a dangerous warning.
+:::
+
+::: details
+This is a details block.
+:::
+```

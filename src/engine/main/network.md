@@ -95,7 +95,7 @@ Registers a raw packet handler using the `PacketId`.
 
 ## BinNetworkAdapter
 
-Bounded to `game` as `game.network`. Extends `NetworkAdapter`.
+Bounded to `game` as `game.network`. Extends `NetworkAdapter`, alias: `NetworkType`
 
 ### Variables
 
@@ -166,7 +166,7 @@ function onPing(): void
 ```
 Calculates the latency when a ping response is received.
 
-## BinCodec
+## `BinCodec`
 
 The `BinCodec` class handles the serialization and deserialization of game data into a compact binary format using `ByteBuffer`.
 

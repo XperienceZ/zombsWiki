@@ -24,6 +24,10 @@ export default defineConfig({
       provider: "local",
     },
 
+    editLink: {
+      pattern: 'https://github.com/AyuBloom/zombsWiki/edit/main/src/:path'
+    },
+
     sidebar: [
       {
         text: "Introduction",
@@ -47,20 +51,25 @@ export default defineConfig({
               { text: "inputPacketCreator", link: "/engine/main/inputPacketCreator" },
               { text: "inputPacketScheduler", link: "/engine/main/inputPacketScheduler" },
             ],
+            collapsed: true,
           },
           {
             text: "Utility Components",
             items: [
-              { text: "assetManager", link: "/engine/utilities/assetManager" },
-              { text: "debug", link: "/engine/utilities/debug" },
-              { text: "metrics", link: "/engine/utilities/metrics" },
-              { text: "platform", link: "/engine/utilities/platform" },
+              { text: "assetManager", link: "/engine/utils/assetManager" },
+              { text: "debug", link: "/engine/utils/debug" },
+              { text: "metrics", link: "/engine/utils/metrics" },
+              { text: "platform", link: "/engine/utils/platform" },
             ],
+            collapsed: true,
           }
         ],
       },
+      { text: "MakeBlendField", items: [
+        { text: "Overview", link: "/mbf/overview" },
+      ]},
       { text: "Miscellaneous", items: [
-        { text: "Records", link: "/misc/records" },
+        { text: "World Records", link: "/misc/records" },
       ]},
     ],
 
@@ -71,5 +80,6 @@ export default defineConfig({
       { icon: "discord", link: "https://discord.gg/Wm7khMgzUe" },
     ],
 
+    lastUpdated: { formatOptions: { dateStyle: "long", timeStyle: "short" } }
   },
 });
