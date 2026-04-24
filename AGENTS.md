@@ -29,13 +29,15 @@ zombsWiki/
 
 ## Documentation Format
 
+- All TypeScript types should be written in lowercase (except `Function`, `Array`)
+
 ### When writing methods
 
 ````md
 
 #### `methodName()`
 ```ts
-function methodName(parameter: Type): returnValue
+function methodName(parameter: type): returnValue
 ```
 
 ````
