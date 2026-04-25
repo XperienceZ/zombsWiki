@@ -41,7 +41,7 @@ try {
   let readme = fs.readFileSync(README_PATH, 'utf-8');
 
   // Find the Project structure section and its following code block
-  // This regex targets the first code block after "## Project structure"
+  // This regex targets the first code block after "## Website layout"
   const regex = /(### Website layout[\s\S]*?```)[\s\S]*?(```)/;
 
   if (regex.test(readme)) {
