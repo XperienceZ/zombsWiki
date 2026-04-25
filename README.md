@@ -1,23 +1,18 @@
 # zombs.io Wiki
-
 Welcome to the zombs.io Wiki repository! Here are some things you should know before contributing to the project.
 
 ## Prerequisites
-
 - Some knowledge of Markdown (.md) files
 - Basic understanding of GitHub (making pull requests, resolving merge conflicts, etc.)
 
 ## Writing guidelines
-
 - Add badges to indicate classes being "public" or "private", if possible (use `type: tip` for public, `type: danger` for private).
 - Keep the formatting consistent.
 
 ## Project structure
-
 Markdown files for each page (adjacent to their actual route) are placed inside `/src`. Static assets are placed inside `/src/public`.
 
 ### Website layout
-
 ```
 src/
 ├── engine
@@ -61,5 +56,4 @@ src/
 ```
 
 ## Using AI agents
-
 Usage of AI agents to write documentation is permitted (and in fact, encouraged to speed up writing). This project provides an `AGENTS.md` to help your AI agents write more accurately without / with minor modifications afterwards.
