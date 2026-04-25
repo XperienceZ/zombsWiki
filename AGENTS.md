@@ -29,7 +29,29 @@ zombsWiki/
 
 ## Documentation Format
 
-- All TypeScript types should be written in lowercase (except `Function`, `Array`)
+### Engine Documentation Format
+
+The following page format is recommended, but not obligated as it does not handle edge cases.
+
+```md
+<!-- headers are case-sensitive -->
+# className
+
+descriptionParagraph
+
+## ClassName
+
+descriptionParagraph
+
+### Properties
+<!-- ... -->
+
+<!-- more parts can be added here to explain some properties in depth -->
+
+### Methods
+<!-- ... -->
+
+```
 
 ### When writing methods
 
@@ -37,7 +59,7 @@ zombsWiki/
 
 #### `methodName()`
 ```ts
-function methodName(parameter: type): returnValue
+function methodName(parameter: Type): returnValue
 ```
 
 ````
