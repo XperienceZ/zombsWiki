@@ -35,11 +35,11 @@ The following page format is recommended, but not obligated as it does not handl
 
 ```md
 <!-- headers are case-sensitive -->
-# className
+# `className`
 
 descriptionParagraph
 
-## ClassName
+## `ClassName`
 
 descriptionParagraph
 

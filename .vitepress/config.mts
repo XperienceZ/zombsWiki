@@ -5,7 +5,7 @@ export default defineConfig({
   title: "zombs.io Wiki",
   description: "Wiki for everything zombs.io",
   sitemap: {
-    hostname: 'https://ayubloom.github.io/zombsWiki/'
+    hostname: "https://ayubloom.github.io/zombsWiki/",
   },
   base: "/zombsWiki/",
   srcDir: "src",
@@ -28,7 +28,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/AyuBloom/zombsWiki/edit/main/src/:path'
+      pattern: "https://github.com/AyuBloom/zombsWiki/edit/main/src/:path",
     },
 
     sidebar: [
@@ -46,7 +46,11 @@ export default defineConfig({
           {
             text: "Main Components",
             items: [
-              { text: "ui", link: "/engine/main/ui" },
+              {
+                text: "ui",
+                items: [{ text: "ui", link: "/engine/main/ui/ui" }],
+                collapsed: true,
+              },
               { text: "world", link: "/engine/main/world" },
               { text: "network", link: "/engine/main/network" },
               { text: "renderer", link: "/engine/main/renderer" },
@@ -63,6 +67,7 @@ export default defineConfig({
               { text: "debug", link: "/engine/utils/debug" },
               { text: "metrics", link: "/engine/utils/metrics" },
               { text: "platform", link: "/engine/utils/platform" },
+              { text: "util", link: "/engine/utils/util" },
             ],
             collapsed: true,
           },
@@ -91,12 +96,11 @@ export default defineConfig({
           },
         ],
       },
-      { text: "MakeBlendField", items: [
-        { text: "Overview", link: "/mbf/overview" },
-      ]},
-      { text: "Miscellaneous", items: [
-        { text: "World Records", link: "/misc/records" },
-      ]},
+      { text: "MakeBlendField", items: [{ text: "Overview", link: "/mbf/overview" }] },
+      {
+        text: "Miscellaneous",
+        items: [{ text: "World Records", link: "/misc/records" }],
+      },
     ],
 
     logo: "/logo.svg",
@@ -106,6 +110,6 @@ export default defineConfig({
       { icon: "discord", link: "https://discord.gg/Wm7khMgzUe" },
     ],
 
-    lastUpdated: { formatOptions: { dateStyle: "long", timeStyle: "short" } }
+    lastUpdated: { formatOptions: { dateStyle: "long", timeStyle: "short" } },
   },
 });
