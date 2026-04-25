@@ -2,7 +2,7 @@
 
 The `Metrics` class is responsible for collecting and reporting performance data to the server. It tracks various indicators such as FPS, ping, and client-side lag.
 
-## `Metrics`
+## `Metrics` <Badge type="tip" text="public" />
 
 Bounded to `game` as `game.metrics`. Alias: `MetricsType`
 
@@ -18,7 +18,7 @@ Bounded to `game` as `game.metrics`. Alias: `MetricsType`
 | `fpsSum` | `number` | Sum of all FPS samples for calculating average. |
 | `fpsSamples` | `number` | Number of FPS samples collected. |
 
-### `metrics`
+::: details `metrics` Object
 
 The `metrics` object contains the following fields sent to the server:
 
@@ -49,6 +49,8 @@ The `metrics` object contains the following fields sent to the server:
 | `totalExtrapolationTime` | Cumulative time spent in extrapolation. |
 | `extrapolationIncidents` | Number of extrapolation occurrences. |
 | `differenceInClientTime` | Discrepancy in client time synchronization. |
+
+:::
 
 ### Methods
 

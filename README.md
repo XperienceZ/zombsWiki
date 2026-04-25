@@ -5,6 +5,10 @@ Welcome to the zombs.io Wiki repository! Here are some guidelines about how to c
 - Some knowledge of Markdown (.md) files
 - Basic understanding of GitHub (making pull requests, resolving merge conflicts, etc.)
 
+## Writing guidelines
+- Add badges to indicate classes being "public" or "private", if possible (use `type: tip` for public, `type: danger` for private).
+- Keep the formatting consistent.
+
 ## Project structure
 Markdown files for each page (adjacent to their actual route) are placed inside `/src`. Static assets are placed inside `/src/public`.
 

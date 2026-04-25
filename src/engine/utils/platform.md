@@ -2,6 +2,6 @@
 
 This class exists, but doesn't have any useful utilities.
 
-## `Platform`
+## `Platform` <Badge type="tip" text="public" />
 
 Bounded to `game` as `game.platform`. Alias: `PlatformType`

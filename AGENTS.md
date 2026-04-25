@@ -96,3 +96,16 @@ This is a dangerous warning.
 This is a details block.
 :::
 ```
+
+## Badges
+
+You may want to use these badges when necessary.
+
+```md
+
+### Title <Badge type="info" text="info" />
+### Title <Badge type="tip" text="tip" />
+### Title <Badge type="warning" text="warning" />
+### Title <Badge type="danger" text="danger" />
+
+```

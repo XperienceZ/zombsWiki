@@ -2,7 +2,7 @@
 
 The `network` module handles all communication between the client and the server. It includes low-level socket management, binary encoding/decoding via ByteBuffer and a novel anti-bot mechanism.
 
-## `NetworkAdapter`
+## `NetworkAdapter` <Badge type="danger" text="private" />
 
 ### Methods
 
@@ -96,7 +96,7 @@ function addPacketHandler(event: number, callback: Function): void
 ```
 Registers a raw packet handler using the `PacketId`.
 
-## BinNetworkAdapter
+## BinNetworkAdapter <Badge type="tip" text="public" />
 
 Bounded to `game` as `game.network`. Extends `NetworkAdapter`, alias: `NetworkType`
 
@@ -169,7 +169,7 @@ function onPing(): void
 ```
 Calculates the latency when a ping response is received.
 
-## `BinCodec`
+## `BinCodec` <Badge type="danger" text="private" />
 
 The `BinCodec` class handles the serialization and deserialization of game data into a compact binary format using `ByteBuffer`.
 
@@ -279,9 +279,7 @@ Encodes a ping packet.
 
 ## Enumerations
 
-These enumeration objects are private.
-
-### `PacketIds`
+### `PacketIds` <Badge type="danger" text="private" />
 
 `PacketIds` is a set of constants representing the different types of packets sent and received by the network (each type of packet is referred to as a `PacketId`).
 
@@ -298,7 +296,7 @@ These enumeration objects are private.
 | `PACKET_RPC` | `9` | Used for Remote Procedure Calls (RPC). |
 | `PACKET_BLEND` | `10` | Used for internal obfuscation/validation. |
 
-### `e_AttributeType`
+### `e_AttributeType` <Badge type="danger" text="private" />
 
 | Constant | Value | Notes |
 | :--- | :--- | :--- |
@@ -319,7 +317,7 @@ These enumeration objects are private.
 | `Int64` | `14` | |
 | `Double` | `15` | |
 
-### `e_ParameterType`
+### `e_ParameterType` <Badge type="danger" text="private" />
 
 | Constant | Value |
 | :--- | :--- |

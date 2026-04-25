@@ -2,7 +2,7 @@
 
 The `assetManager` class is simple: it is an abstraction over `pixi.js`'s asset loader and provides preloaded models.
 
-## `AssetManager`
+## `AssetManager` <Badge type="tip" text="public" />
 
 Bounded to `game` as `game.assetManager`. Alias: `AssetManagerType`
 
