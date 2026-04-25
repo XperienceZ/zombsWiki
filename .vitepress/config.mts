@@ -12,7 +12,10 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/zombsWiki/logo.svg" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
-    ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }],
+    [
+      "link",
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+    ],
     [
       "link",
       {
@@ -55,8 +58,14 @@ export default defineConfig({
               { text: "network", link: "/engine/main/network" },
               { text: "renderer", link: "/engine/main/renderer" },
               { text: "inputManager", link: "/engine/main/inputManager" },
-              { text: "inputPacketCreator", link: "/engine/main/inputPacketCreator" },
-              { text: "inputPacketScheduler", link: "/engine/main/inputPacketScheduler" },
+              {
+                text: "inputPacketCreator",
+                link: "/engine/main/inputPacketCreator",
+              },
+              {
+                text: "inputPacketScheduler",
+                link: "/engine/main/inputPacketScheduler",
+              },
             ],
             collapsed: true,
           },
@@ -96,7 +105,10 @@ export default defineConfig({
           },
         ],
       },
-      { text: "MakeBlendField", items: [{ text: "Overview", link: "/mbf/overview" }] },
+      {
+        text: "MakeBlendField",
+        items: [{ text: "Overview", link: "/mbf/overview" }],
+      },
       {
         text: "Miscellaneous",
         items: [{ text: "World Records", link: "/misc/records" }],

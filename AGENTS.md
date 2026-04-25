@@ -8,6 +8,7 @@ This project is a documentation website built for a 2D multiplayer survival game
 - **Package Manager**: `pnpm`
 
 ## Project Structure
+
 ```
 zombsWiki/
 ├── .vitepress/           # VitePress configuration
@@ -18,8 +19,8 @@ zombsWiki/
 └── src/                  # All the .md files on the website, presented as routes
     ├── .../                  # .md files on routes
     ├── index.md              # Homepage of the website
-    └── public/               # Entry point of all public 
-        └── assets/               # Entry point of all assets 
+    └── public/               # Entry point of all public
+        └── assets/               # Entry point of all assets
 ```
 
 ## Common Commands
@@ -35,6 +36,7 @@ The following page format is recommended, but not obligated as it does not handl
 
 ```md
 <!-- headers are case-sensitive -->
+
 # `className`
 
 descriptionParagraph
@@ -44,36 +46,37 @@ descriptionParagraph
 descriptionParagraph
 
 ### Properties
+
 <!-- ... -->
 
 ### Methods
+
 <!-- ... -->
 
 <!-- more parts can be added here, or inbetween the two above -->
-
 ```
 
 ### When writing methods
 
 ````md
-
 #### `methodName()`
-```ts
-function methodName(parameter: type): returnValue
-```
 
+```ts
+function methodName(parameter: type): returnValue;
+```
 ````
 
 ### When writing tables
 
 ```md
 | Head1 | Head2 | ... |
-| :--- | :--- | :--- |
+| :---- | :---- | :-- |
 | data1 | data2 | ... |
-| ... | ... | ... |
+| ...   | ...   | ... |
 ```
 
 ## Containers
+
 You may want to use these containers when addressing a property in detail, etc.
 
 ```md
@@ -103,10 +106,11 @@ This is a details block.
 You may want to use these badges when necessary.
 
 ```md
-
 ### Title <Badge type="info" text="info" />
-### Title <Badge type="tip" text="tip" />
-### Title <Badge type="warning" text="warning" />
-### Title <Badge type="danger" text="danger" />
 
+### Title <Badge type="tip" text="tip" />
+
+### Title <Badge type="warning" text="warning" />
+
+### Title <Badge type="danger" text="danger" />
 ```
