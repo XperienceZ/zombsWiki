@@ -17,12 +17,13 @@ Markdown files for each page (adjacent to their actual route) are placed inside 
 src/
 ├── engine
 │   ├── main
+│   │   ├── ui
+│   │   │   └── ui.md
 │   │   ├── inputManager.md
 │   │   ├── inputPacketCreator.md
 │   │   ├── inputPacketScheduler.md
 │   │   ├── network.md
 │   │   ├── renderer.md
-│   │   ├── ui.md
 │   │   └── world.md
 │   ├── utils
 │   │   ├── assetManager.md
