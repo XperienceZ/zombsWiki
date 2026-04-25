@@ -29,7 +29,8 @@ src/
 │   │   ├── assetManager.md
 │   │   ├── debug.md
 │   │   ├── metrics.md
-│   │   └── platform.md
+│   │   ├── platform.md
+│   │   └── util.md
 │   └── overview.md
 ├── game
 │   └── buildings
