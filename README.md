@@ -1,5 +1,5 @@
 # zombs.io Wiki
-Welcome to the zombs.io Wiki repository! Here are some guidelines about how to contribute to the project.
+Welcome to the zombs.io Wiki repository! Here are some things you should know before contributing to the project.
 
 ## Prerequisites
 - Some knowledge of Markdown (.md) files

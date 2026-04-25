@@ -46,10 +46,10 @@ descriptionParagraph
 ### Properties
 <!-- ... -->
 
-<!-- more parts can be added here to explain some properties in depth -->
-
 ### Methods
 <!-- ... -->
+
+<!-- more parts can be added here, or inbetween the two above -->
 
 ```
 
@@ -59,7 +59,7 @@ descriptionParagraph
 
 #### `methodName()`
 ```ts
-function methodName(parameter: Type): returnValue
+function methodName(parameter: type): returnValue
 ```
 
 ````
@@ -73,7 +73,8 @@ function methodName(parameter: Type): returnValue
 | ... | ... | ... |
 ```
 
-## Custom Containers
+## Containers
+You may want to use these containers when addressing a property in detail, etc.
 
 ```md
 ::: info

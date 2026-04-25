@@ -1,6 +1,6 @@
 # `debug`
 
-The `debug` utility provides a fixed on-screen display for monitoring real-time game performance and network synchronization. It integrates with the `stats.js` library to provide FPS/millisecond graphs and renders detailed engine metrics to a dedicated HUD element.
+The `debug` utility provides a fixed on-screen display for monitoring real-time game performance (FPS/millisecond), engine metrics and network synchronization. This HUD is hidden from the user, and can be toggled on/off with the `F6` key.
 
 ## `Debug` <Badge type="tip" text="public" />
 
