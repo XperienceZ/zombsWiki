@@ -4,11 +4,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Hammersmith One", sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 :root {
-  --vp-c-brand-1: #47950d;
-  --vp-c-brand-2: #64b820;
-  --vp-badge-tip-bg: rgba(72, 149, 13, 0.16);
+    --vp-c-brand-1: #47950d;
+    --vp-c-brand-2: #64b820;
+    --vp-badge-tip-bg: rgba(72, 149, 13, 0.16);
 }
