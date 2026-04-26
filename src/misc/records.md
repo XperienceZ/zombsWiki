@@ -6,15 +6,15 @@ Below is a comprehensive table containing all of the World Records for the Wave 
 
 | Waves | Date | Players | Notes |
 | :--- | :--- | :--- | :--- |
-| 58,177 | May 8 2024 | Lolol, skk, Shadow [#1] | |
+| 58,177 | May 8 2024 | Lolol, skk, Shadow | |
 | 53,196 | Nov 21 2019 | demostanis, Bad Players | Removed |
 | 52,912 | Nov 21 2019 | demostanis, Bad Players | Removed |
 | 52,777 | Nov 21 2019 | demostanis, Bad Players | Removed |
-| 52,664 | Dec 12 2023 | Sirr0m, Lolol, Shadow [#2] | |
-| 52,158 | Dec 9 2024 | Sirr0m, Lolol [#3] | |
+| 52,664 | Dec 12 2023 | Sirr0m, Lolol, Shadow | |
+| 52,158 | Dec 9 2024 | Sirr0m, Lolol | |
 | 52,151 | Nov 21 2019 | demostanis, Bad Players | Removed |
-| 51,769 | Dec 9 2024 | Sirr0m, Lolol [#4] | |
-| 51,768 | Dec 9 2024 | Sirr0m, Lolol [#5] | |
+| 51,769 | Dec 9 2024 | Sirr0m, Lolol | |
+| 51,768 | Dec 9 2024 | Sirr0m, Lolol | |
 | 51,767 | Dec 9 2024 | Sirr0m, Lolol | |
 | 51,761 | Dec 9 2024 | Sirr0m, Lolol | |
 | 51,492 | Dec 9 2024 | Sirr0m, Lolol | |
