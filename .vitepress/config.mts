@@ -12,10 +12,7 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", href: "/zombsWiki/logo.svg" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
-    [
-      "link",
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
-    ],
+    ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }],
     [
       "link",
       {
@@ -120,13 +117,17 @@ export default defineConfig({
             text: "Active Bugs",
             items: [
               { text: "Disappearing Resources", link: "/bugs/active/rss_go_poof" },
+              { text: "Odd Zombie Spawning", link: "/bugs/active/odd_zombie_spawn.md" },
             ],
             collapsed: true,
           },
           {
             text: "Inactive / Old Bugs",
             items: [
-              { text: "Tower Heal", link: "/bugs/inactive/tower_heal" },
+              { text: "Tower Heal", link: "/bugs/inactive/tower_heal.md" },
+              { text: "Wave 14 - No zombies", link: "/bugs/inactive/blank_wave.md" },
+              { text: "Tower Buff", link: "/bugs/inactive/tower_buff.md" },
+              { text: "Tower Nerf", link: "/bugs/inactive/tower_nerf.md" },
             ],
             collapsed: true,
           },
