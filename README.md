@@ -46,6 +46,12 @@ Commit your edits to your fork, then go to your fork on GitHub and open a new pu
 ### Website layout
 ```
 src/
+├── bugs
+│   ├── active
+│   │   └── rss_go_poof.md
+│   ├── inactive
+│   │   └── tower_heal.md
+│   └── overview.md
 ├── engine
 │   ├── main
 │   │   ├── ui
