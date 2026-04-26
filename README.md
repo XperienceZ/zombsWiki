@@ -86,5 +86,13 @@ src/
 └── index.md
 ```
 
-## Using AI agents
+## Other notes 
+
+### Using AI agents
 Usage of AI agents to write documentation is permitted (and in fact, encouraged to speed up writing). This project provides an `AGENTS.md` to help your AI agents write more accurately without / with minor modifications afterwards.
+
+### Credits
+
+- Giving credits for others must be done if the content is not made by yourself.
+- Noting yourself as the writer for your pages is recommended (but not a requirement).
+Writer / Credits notes should be at the end of a page.

@@ -113,6 +113,26 @@ export default defineConfig({
         items: [{ text: "Overview", link: "/mbf/overview" }],
       },
       {
+        text: "Bugs",
+        items: [
+          { text: "Overview", link: "/bugs/overview" },
+          {
+            text: "Active Bugs",
+            items: [
+              { text: "Disappearing Resources", link: "/bugs/active/rss_go_poof" },
+            ],
+            collapsed: true,
+          },
+          {
+            text: "Inactive / Old Bugs",
+            items: [
+              { text: "Tower Heal", link: "/bugs/inactive/tower_heal" },
+            ],
+            collapsed: true,
+          },
+        ],
+      },
+      {
         text: "Miscellaneous",
         items: [{ text: "World Records", link: "/misc/records" }],
       },
