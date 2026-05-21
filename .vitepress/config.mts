@@ -580,6 +580,24 @@ export default defineConfig({
               { text: "Introduction", link: "/gameplay/game/introduction" },
               { text: "Changelog", link: "/gameplay/game/changelog" },
               {
+                text: "Entities",
+                items: [
+                  {
+                    text: "Zombies",
+                    link: "/gameplay/game/entities/zombies.md",
+                  },
+                  {
+                    text: "Neutral",
+                    link: "/gameplay/game/entities/neutral.md",
+                  },
+                  {
+                    text: "Players",
+                    link: "/gameplay/game/entities/player.md",
+                  },
+                ],
+                collapsed: true,
+              },
+              {
                 text: "Buildings",
                 items: [
                   {
@@ -626,10 +644,6 @@ export default defineConfig({
                   },
                 ],
                 collapsed: true,
-              },
-              {
-                text: "Zombies",
-                link: "/gameplay/game/zombies",
               },
             ],
             collapsed: true,

@@ -5,6 +5,11 @@ title: Zombies - zombs.io Wiki
 
 ## Basics
 
+Zombies are entities that spawn during night time around your gold stash with the goal to destroy it. They deal damage on touch. They lose damage during daytime.
+
+<ImageWithDescription image="/asset/gameplay/game/entities/zombieswstats.png" description="A small pile of Orange Zombies with the hitbox & HP shown. Note: script used to display the data" />
+
+
 ### Zombie Types & Tiers
 
 Each type of zombie is recognized by its color, and within each type there are 10 tiers of zombies with different sizes and shades of the same color: as zombies get darker and larger, they are higher tiered.
@@ -16,6 +21,133 @@ On wave 9, 17, 25, 33, 41, 49, 57, 65, 73, 81, 89, 97, 105 and 121, bosses will 
 ### Party Members
 
 The more members are in a party, the more zombies spawn.
+
+## Stats
+Click below to view the zombie stats.
+::: details
+### Zombie Green
+
+| Tier | Image | Health | Damage | Collision Radius (px) |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 |  | 60 | 1 | 22 |
+| 2 |  | 200 | 2 | 22 |
+| 3 |  | 300 | 3 | 22 |
+| 4 |  | 500 | 5 | 22 |
+| 5 |  | 700 | 7 | 22 |
+| 6 |  | 1000 | 9 | 22 |
+| 7 |  | 1500 | 13 | 22 |
+| 8 |  | 2000 | 18 | 22 |
+| 9 |  | 2500 | 22 | 22 |
+| 10 |  | 4000 | 24 | 22 |
+
+---
+
+### Zombie Blue
+
+| Tier | Image | Health | Damage | Collision Radius (px) |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 |  | 3000 | 24 | 22 |
+| 2 |  | 3000 | 20 | 22 |
+| 3 |  | 3500 | 24 | 22 |
+| 4 |  | 4000 | 26 | 22 |
+| 5 |  | 4500 | 28 | 22 |
+| 6 |  | 5000 | 32 | 22 |
+| 7 |  | 5500 | 34 | 22 |
+| 8 |  | 6000 | 36 | 22 |
+| 9 |  | 6000 | 36 | 22 |
+| 10 |  | 8000 | 30 | 22 |
+
+---
+
+### Zombie Red
+
+| Tier | Image | Health | Damage | Collision Radius (px) |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 |  | 10000 | 40 | 22 |
+| 2 |  | 12000 | 41 | 22 |
+| 3 |  | 14000 | 42 | 22 |
+| 4 |  | 16000 | 43 | 22 |
+| 5 |  | 18000 | 45 | 25 |
+| 6 |  | 20000 | 47 | 25 |
+| 7 |  | 22000 | 49 | 30 |
+| 8 |  | 24000 | 50 | 30 |
+| 9 |  | 26000 | 52 | 30 |
+| 10 |  | 30000 | 54 | 32 |
+
+---
+
+### Zombie Yellow
+
+| Tier | Image | Health | Damage | Collision Radius (px) |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 |  | 32000 | 68 | 25 |
+| 2 |  | 34000 | 70 | 25 |
+| 3 |  | 36000 | 72 | 25 |
+| 4 |  | 38000 | 76 | 25 |
+| 5 |  | 40000 | 80 | 25 |
+| 6 |  | 42000 | 82 | 25 |
+| 7 |  | 42000 | 84 | 25 |
+| 8 |  | 44000 | 86 | 25 |
+| 9 |  | 46000 | 88 | 25 |
+| 10 |  | 60000 | 94 | 25 |
+
+---
+
+### Zombie Purple
+
+| Tier | Image | Health | Damage | Collision Radius (px) |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 |  | 70000 | 98 | 23 |
+| 2 |  | 72000 | 104 | 23 |
+| 3 |  | 74000 | 110 | 23 |
+| 4 |  | 76000 | 130 | 25 |
+| 5 |  | 78000 | 140 | 25 |
+| 6 |  | 80000 | 150 | 25 |
+| 7 |  | 82000 | 160 | 25 |
+| 8 |  | 84000 | 170 | 25 |
+| 9 |  | 86000 | 180 | 25 |
+| 10 |  | 88000 | 200 | 25 |
+
+---
+
+### Zombie Orange
+
+| Tier | Image | Health | Damage | Collision Radius (px) |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 |  | 92000 | 170 | 25 |
+| 2 |  | 94000 | 220 | 25 |
+| 3 |  | 96000 | 240 | 25 |
+| 4 |  | 100000 | 260 | 25 |
+| 5 |  | 102000 | 280 | 25 |
+| 6 |  | 104000 | 300 | 25 |
+| 7 |  | 108000 | 340 | 25 |
+| 8 |  | 112000 | 380 | 25 |
+| 9 |  | 118000 | 400 | 25 |
+| 10 |  | 120000 | 440 | 25 |
+
+---
+
+### Zombie Boss
+
+| Tier | Image | Health | Damage | Collision Radius (px) |
+| :---: | :---: | :---: | :---: | :---: |
+| 3 |  | 18000 | 80 | 22 |
+| 5 |  | 40000 | 100 | 22 |
+| 7 |  | 80000 | 140 | 22 |
+| 9 |  | 100000 | 160 | 22 |
+| 11 |  | 180000 | 180 | 22 |
+| 13 |  | 240000 | 200 | 22 |
+| 15 |  | 320000 | 220 | 22 |
+| 17 |  | 360000 | 240 | 22 |
+| 19 |  | 420000 | 260 | 22 |
+| 21 |  | 480000 | 300 | 22 |
+| 23 |  | 520000 | 320 | 22 |
+| 25 |  | 560000 | 340 | 22 |
+| 27 |  | 660000 | 360 | 22 |
+| 31 |  | 660000 | 360 | 22 |
+:::
+
+Credits: ABCxFF
 
 ## Patterns
 
@@ -61,6 +193,8 @@ The table below shows the amount of score each player gets depending on the amou
 | :--- | :--- |
 | 3 | 2 199 780 |
 | 4 | 2 200 000 |
+
+
 
 The scoring system considers multiple different factors to award score:
 - When an orange zombie dies to the base, the score is split between everyone in the base.
