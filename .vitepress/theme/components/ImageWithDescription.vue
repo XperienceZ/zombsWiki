@@ -17,7 +17,12 @@
       "
     >
       <!-- unideal to have to use `/zombsWiki` here, but there's no other way ¯\_(ツ)_/¯ -->
-      <img :src="`/zombsWiki${image}`" style="display: block; margin: 0 auto" />
+      <img
+        :src="`/zombsWiki${image}`"
+        :width="width"
+        :height="height"
+        style="display: block; margin: 0 auto"
+      />
       <div>{{ description }}</div>
     </div>
   </div>
@@ -27,5 +32,7 @@
 defineProps({
   image: { type: String, required: true },
   description: { type: String, required: true },
+  width: { type: [String, Number], required: false },
+  height: { type: [String, Number], required: false },
 });
 </script>
