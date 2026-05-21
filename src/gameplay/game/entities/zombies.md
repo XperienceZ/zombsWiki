@@ -237,3 +237,93 @@ A script has been made to visualize the real bounding box for each obstacle type
 ::: warning
 This section is under construction.
 :::
+
+## Changelog
+
+### January 18, 2022 - Minor Update
+```md{6}
+- Fix some hostility detection bugs with pets
+- Party share keys now change when kicking players. New keys are broadcast to non leader party members after 5 seconds
+- Add a 1 second kick party member cooldown
+- Limit building delete range
+- Add a 100 ms delete building cooldown
+- Fix wave 14 not spawning zombies
+- Afk checking is now more strict
+- Internal infrastructure maintenance
+```
+
+### August 23, 2021 - Minor Update
+```md{3}
+- Extend hostility detection to work on individual players to stop scripts that start new partys and kick themselves to undo the old hostility detection
+- Fix one method of pet invulnerability
+- Zombie day time damage is now based on % of max health instead of % of current health to fix max tier walls + low level waves from lagging out the server
+- Lower party change cooldown to 1 second from 15 seconds because the disconnection exploit has been fixed for a while now
+- Remove cooldowns for open party toggle and party names because the disconnection exploit has been fixed  for a while now
+```
+
+### May 31, 2017 - Minor Update
+```md{3}
+- New Tier buildings - Tier 8 (Emerald) buildings are now available to build!
+- Party function - Party leaders now can allow or disallow members from selling party buildings
+- New Zombie tier - orange tiers!
+```
+
+
+### May 30, 2017 - Minor Update
+```md{2}
+- NEW TOWER - A new tower arrives! The spiky melee tower packs a punch, but it can only shoot in 1 direction. Press R when placing to determine which direction it will face. Choose it's position wisely, and this tower can do some serious damage to enemy zombies
+- On-Hit Effects - When a zombie is damaged, you will now see an on-hit indicator showing that your towers have hit them!
+- Waves - Boss waves were buffed, normal waves above level 100 were made more difficult, and bosses have started giving much more gold when you kill them
+- Major Update coming soon
+```
+
+### May 21, 2017 - Minor Update
+```md{2}
+- Added Kick function to party (only leader can kick).
+- Added more purple zombies.
+- Added a cooldown to using health potions to prevent abuse.
+- Fixed a display bug with the party and shop menus.
+- Server population should update much more frequently.
+```
+
+### May 17, 2017 - Major Update
+```md{6}
+- [PETS] You can now have a pet that fights along with you. Check out the shop for how to obtain the first one. You level your pet via killing zombies and monsters around the map. You can also evolve your pet to make it stronger!
+- [MONSTER CAMPS] There are now monster camps around the map that you can kill for experience for your pet. You can also kill them for fun. They will do more things later!
+- [BOSS WAVES] There are now simple boss waves every 8 waves. These check how defensive your base is, they aren't made to be too hard. Bosses also drop tokens which you use to buy special things coming in the near future.
+- [HATS] Hats!
+
+- A few more new zombies - purple tier!
+- Pet whistle calls your pet to return to you.
+- There are now damage numbers when you or your pet hit enemies.
+- More performance optimization and fixes.
+- When players leave your party, their gold mines will despawn to prevent abuse.
+```
+
+### May 14, 2017 - Minor Update
+```md{7}
+- [PERFORMANCE] Network and frame rates optimized for lower-end systems.
+- [WEAPONS] Bombs now collide with buildings.
+- [BASE] You can no longer place a gold stash too close to another player's stash.
+- [PLAYER] You are now given 30s of invulnerability when you respawn.
+- [PLAYER] Added F key to use a health potion.
+
+- Zombies no longer pause and move in random directions.
+- Chat messages now show directly above the player and in a chatlog.
+```
+
+### May 12, 2017 - Major Update
+```md{2,5,7}
+- [WEAPONS] Buffed weapons massively against zombies and increased gold cost to balance.
+- [ZOMBIES] Added a new yellow zombie tier and updated assets for all of the zombies. End-game waves will be harder - teamwork is much more important for climbing waves and achieving high scores!
+- [SHOP] Added new Shield item to Shop (press B) that absorbs damage from zombies only.
+- [SHOP] Added new Timeout item that prevents the next wave from attacking for one day-night cycle. Use this to take time to rebuild your base/adjust!
+- [ZOMBIES] Adjusted waves 35-50 (red zombie waves are harder now - be careful).
+- [TOWERS/PVP] Towers now attack you if you attack another player's base!
+- [WEAPONS] Normalized damage across towers, players and zombies to reduce PvP snowballing.
+
+- Added changelog to homepage.
+- Added feedback widget to homepage.
+- Added featured YouTuber functionality - contact us on Discord, Twitter or via the feedback form if you're interested.
+- Added share buttons to invite directly to your party after the game ends.
+```
