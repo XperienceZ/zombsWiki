@@ -10,7 +10,7 @@ This section of Wiki is incomplete. If you know any aditional updates that are n
 
 # Changelog
 This is the full Zombs.io Changelog.
- - <Badge type="tip" text="Official"/> -  the changelog is taken from https://zombs.io/changelog
+ - <Badge type="tip" text="Official"/> - the changelog is taken from https://zombs.io/changelog
  - <Badge type="danger" text="Unlisted" /> - the changelog is taken from zombs.io discord servers chat history.
   
 ## 2026
