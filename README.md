@@ -251,6 +251,7 @@ src/
 │   │   │   └── wall.md
 │   │   ├── entities
 │   │   │   ├── entities_overview.md
+│   │   │   ├── neutral.md
 │   │   │   ├── player.md
 │   │   │   └── zombies.md
 │   │   ├── changelog.md
@@ -340,6 +341,9 @@ src/public/
 │       │   │   ├── building_bar.png
 │       │   │   └── mage.png
 │       │   ├── entities
+│       │   │   ├── npc_behaviour.png
+│       │   │   ├── npc_raid.png
+│       │   │   ├── npcs.png
 │       │   │   └── zombieswstats.png
 │       │   └── introduction
 │       │       ├── homepage.png
