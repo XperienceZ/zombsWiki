@@ -251,10 +251,11 @@ src/
 │   │   │   └── wall.md
 │   │   ├── entities
 │   │   │   ├── entities_overview.md
-│   │   │   └── player.md
+│   │   │   ├── neutral.md
+│   │   │   ├── player.md
+│   │   │   └── zombies.md
 │   │   ├── changelog.md
-│   │   ├── introduction.md
-│   │   └── zombies.md
+│   │   └── introduction.md
 │   └── scripts
 │       ├── fundamentals
 │       │   ├── dc_triggers.md
@@ -339,6 +340,11 @@ src/public/
 │       │   ├── buildings
 │       │   │   ├── building_bar.png
 │       │   │   └── mage.png
+│       │   ├── entities
+│       │   │   ├── npc_behaviour.png
+│       │   │   ├── npc_raid.png
+│       │   │   ├── npcs.png
+│       │   │   └── zombieswstats.png
 │       │   └── introduction
 │       │       ├── homepage.png
 │       │       ├── party1.png
