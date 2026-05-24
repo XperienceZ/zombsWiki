@@ -4,7 +4,7 @@ This project is a documentation website built for a 2D multiplayer survival game
 
 ## Technology Stack
 
-- **Framework**: [VitePress](https://vitepress.dev/) (with plugins: [vitepress-plugin-llms](https://github.com/okineadev/vitepress-plugin-llms))
+- **Framework**: [VitePress](https://vitepress.dev/) (with plugins: [vitepress-plugin-llms](https://github.com/okineadev/vitepress-plugin-llms), [markdown-it-multimd-table](https://github.com/redbug312/markdown-it-multimd-table))
 - **Package Manager**: `pnpm`
 - **Other dependencies**: `gray-matter`
 

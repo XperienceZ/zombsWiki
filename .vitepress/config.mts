@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 import llmstxt, {
   copyOrDownloadAsMarkdownButtons,
 } from "vitepress-plugin-llms";
+import multimd_table_plugin from "markdown-it-multimd-table";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -106,6 +107,7 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(copyOrDownloadAsMarkdownButtons);
+      md.use(multimd_table_plugin);
     },
   },
 

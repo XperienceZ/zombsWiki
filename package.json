@@ -12,6 +12,7 @@
     "check:frontmatter": "node ./scripts/check-frontmatter.mjs"
   },
   "dependencies": {
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "markdown-it-multimd-table": "^4.2.3"
   }
 }
